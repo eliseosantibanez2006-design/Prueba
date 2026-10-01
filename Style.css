@@ -1,0 +1,396 @@
+/* ========================================
+   ESTILOS GENERALES
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #493c42;
+    line-height: 1.6;
+
+    background-color: #f7eee3;
+
+    background-image:
+        url("img/Fondo zanahorias.png"),
+        url("img/Fondo zanahorias.png");
+
+    background-repeat: no-repeat, no-repeat;
+
+    background-position:
+        left center,
+        right center;
+
+    background-size:
+        1000px auto,
+        1000px auto;
+
+    background-attachment: fixed;
+}
+
+
+/* ========================================
+   ENCABEZADO
+======================================== */
+
+header {
+    padding: 50px 20px;
+    background:
+        linear-gradient(rgba(234, 219, 208, 0.75), rgba(234, 219, 208, 0.75)),
+        url("img/Mirko-fondo.webp");
+    background-size: cover;
+    background-position: center;
+    border-bottom: 3px solid #8e536d;
+}
+
+.perfil-header {
+    max-width: 900px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 30px;
+}
+
+.perfil-header img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center 10%;
+    border-radius: 50%;
+    border: 5px solid #fff8ef;
+    box-shadow: 0 5px 15px rgba(105, 61, 84, 0.20);
+}
+
+.perfil-header h1 {
+    font-size: 3.5rem;
+
+    color: #693d54;
+
+    margin-bottom: 5px;
+}
+
+.perfil-header p {
+    font-size: 1.2rem;
+
+    color: #765e68;
+}
+
+
+/* ========================================
+   NAVEGACIÓN
+======================================== */
+
+nav {
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+
+    display: flex;
+    justify-content: center;
+
+    gap: 30px;
+
+    padding: 18px 20px;
+
+    background-color: #fff8ef;
+
+    border-bottom: 1px solid #d8bfc7;
+}
+
+nav a {
+    color: #693d54;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #b85c78;
+}
+
+
+/* ========================================
+   CONTENIDO PRINCIPAL
+======================================== */
+
+main {
+    max-width: 1100px;
+    margin: auto;
+}
+
+section {
+    padding: 80px 30px;
+
+    scroll-margin-top: 70px;
+}
+
+section h2 {
+    font-size: 2.2rem;
+
+    color: #693d54;
+
+    margin-bottom: 25px;
+
+    border-left: 5px solid #b85c78;
+
+    padding-left: 15px;
+}
+
+section p {
+    color: #66545c;
+}
+
+
+/* ========================================
+   SECCIÓN INICIO
+======================================== */
+
+#inicio {
+    min-height: 520px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 50px;
+
+    background-color: #f3e4d5;
+
+    border-bottom: 1px solid #dec9c1;
+}
+
+#inicio h2 {
+    font-size: 3rem;
+
+    color: #693d54;
+
+    border-left: none;
+
+    padding-left: 0;
+}
+
+#inicio p {
+    max-width: 720px;
+
+    font-size: 1.2rem;
+
+    margin-bottom: 30px;
+}
+
+#inicio a {
+    display: inline-block;
+
+    width: fit-content;
+
+    padding: 13px 27px;
+
+    background-color: #9d506c;
+
+    color: #fff8ef;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    border-radius: 25px;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+#inicio a:hover {
+    background-color: #7f3e59;
+
+    transform: translateY(-3px);
+}
+
+
+/* IMAGEN DE INICIO */
+
+#inicio img {
+    width: 400px;
+    height: 500px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    border: 3px solid #dec9c1;
+}
+
+.inicio-texto {
+    flex: 1;
+}
+
+
+/* ========================================
+   SOBRE / BIOGRAFÍA
+======================================== */
+
+#biografia {
+    background-color: #fff8ef;
+}
+
+#biografia article {
+    background-color: #f6e9e2;
+
+    padding: 30px;
+
+    margin-top: 20px;
+
+    border-radius: 15px;
+
+    border: 1px solid #dec9c1;
+
+    box-shadow: 0 5px 15px rgba(105, 61, 84, 0.08);
+}
+
+#biografia h3 {
+    color: #8e536d;
+
+    margin-bottom: 15px;
+}
+
+#biografia p {
+    margin-bottom: 15px;
+}
+
+.personalidad {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.personalidad-texto {
+    flex: 1;
+}
+
+.personalidad img {
+    width: 220px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 3px solid #dec9c1;
+}
+
+
+/* ========================================
+   HABILIDADES
+======================================== */
+
+#poderes {
+    background-color: #f3e4d5;
+}
+
+#poderes article {
+    display: inline-block;
+
+    vertical-align: top;
+
+    width: 46%;
+
+    min-height: 220px;
+
+    margin: 1.5%;
+
+    padding: 28px;
+
+    background-color: #fff8ef;
+
+    border: 1px solid #dec9c1;
+
+    border-radius: 18px;
+
+    box-shadow: 0 5px 15px rgba(105, 61, 84, 0.08);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+#poderes article:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 10px 25px rgba(105, 61, 84, 0.15);
+}
+
+#poderes h3 {
+    color: #8e536d;
+
+    margin-bottom: 15px;
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+footer {
+    text-align: center;
+
+    padding: 30px 20px;
+
+    background-color: #693d54;
+
+    color: #f7eee3;
+}
+
+footer p {
+    color: #f3e4d5;
+
+    font-size: 0.9rem;
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    nav {
+        flex-wrap: wrap;
+
+        gap: 15px;
+    }
+
+    section {
+        padding: 60px 20px;
+    }
+
+    #inicio h2 {
+        font-size: 2.3rem;
+    }
+
+    #poderes article {
+        width: 100%;
+
+        margin: 10px 0;
+    }
+
+
+}
